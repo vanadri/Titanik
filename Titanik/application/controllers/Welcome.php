@@ -79,13 +79,11 @@ class Welcome extends CI_Controller {
 				$this->session->set_userdata('email', $data['email']);
                 redirect("index.php/C_User");
             } else {
-				$this->load->view('users/header');
-                $this->load->view('users/home');
+                $this->load->view('Home');
 
             }
 		}else{
-			$this->load->view('users/header');
-			$this->load->view('users/home');
+			$this->load->view('Home');
 		}
 		
 	}

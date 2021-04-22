@@ -130,20 +130,37 @@
     <div class="modal-content" style="background-color: #ffffff; border-radius: 20px;">
       <div class="modal-body">
         <center><img src="<?php echo $this->config->item('base_url'); ?>assets/img/titanik.png" style="width: 300px;" alt="">
-        <p style="color: rgb(0, 0, 0);">Silahkan login terlebih dahulu</p></center>
-        <form action="">
+        <?php if ($this->session->flashdata('success')) : ?>
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <?= $this->session->flashdata('success') ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+          <?php elseif($this->session->flashdata('error')) : ?>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?= $this->session->flashdata('error') ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+          <?php endif ?>
+        <p style="color: white;">Silahkan login terlebih dahulu</p></center>
+
+        <form action="<?= base_url();?>index.php/Welcome/Login" method="post">
           <div class="form-group mb-2 ">
             <label style="color: rgb(0, 0, 0);" for="email">Your email</label>
-            <input type="email" name="email" id="Form-email" class="form-control validate" required>
+            <input type="email" name="email" id="Form-email" class="form-control validate" autocomplete="off" required>
           </div>
           <div class="form-group mb-4">
             <label style="color: rgb(0, 0, 0);" for="password">Password</label>
             <input type="password" name="password"  id="Form-password" class="form-control validate" required>
           </div>
-        </form>
-        <div>
-          <button style="color: rgb(255, 255, 255);" type="button" id="btnlogin" class="btn btn-primary btn-lg btn-block">Sign in</button>
+          <div>
+          <button style="color: rgb(255, 255, 255);" type="submit" name="login" id="btnlogin" class="btn btn-primary btn-lg btn-block">Sign in</button>
         </div>
+        </form>
+        
           <p style="text-align: center;">Anda belum punya akun? <a style="color: rgb(0, 0, 0);" href="#" data-toggle="modal"  data-target="#Registerform" data-dismiss="modal">Buat akun!</a></p>
       </div>
     </div>
@@ -208,7 +225,7 @@
       </div><br><br>
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col mb-2 text-center">
-        <img src="<?php echo $this->config->item('base_url'); ?>assets/img//bapak.png" alt="" style="height: 446px; width: 371px; left: 100px; ">
+        <img src="<?php echo $this->config->item('base_url'); ?>assets/img/bapak.png" alt="" style="height: 446px; width: 371px; left: 100px; ">
         </div>
         <div">
           <br><br><br><br><br><br><br>
