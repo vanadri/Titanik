@@ -134,11 +134,11 @@
         <form action="">
           <div class="form-group mb-2 ">
             <label style="color: rgb(0, 0, 0);" for="email">Your email</label>
-            <input type="email" name="email" id="Form-email" class="form-control validate">
+            <input type="email" name="email" id="Form-email" class="form-control validate" required>
           </div>
           <div class="form-group mb-4">
             <label style="color: rgb(0, 0, 0);" for="password">Password</label>
-            <input type="password" name="password"  id="Form-password" class="form-control validate">
+            <input type="password" name="password"  id="Form-password" class="form-control validate" required>
           </div>
         </form>
         <div>
@@ -163,24 +163,24 @@
           <div class="row">
             <div class="col">
               <label style="color: rgb(0, 0, 0);" for="first-name">Nama Depan</label>
-              <input type="text" name="firstName" id="Form-firstname" class="form-control validate">
+              <input type="text" name="firstName" id="Form-firstname" class="form-control validate" required>
             </div>
             <div class="col">
               <label style="color: rgb(0, 0, 0);" for="last-name">Nama Belakang</label>
-              <input type="text" name="lastName" id="Form-lastname" class="form-control validate">
+              <input type="text" name="lastName" id="Form-lastname" class="form-control validate" required>
             </div>
           </div>
           <div class="form-group mb-2 ">
             <label style="color: rgb(0, 0, 0);" for="email">Email</label>
-            <input type="email" name="email" id="Form-email" class="form-control validate">
+            <input type="email" name="email" id="Form-email" class="form-control validate" required>
           </div>
           <div class="form-group mb-2">
             <label style="color: rgb(0, 0, 0);" for="password">Password</label>
-            <input type="password" name="password" id="Form-password" class="form-control validate">
+            <input type="password" name="password" id="Form-password" class="form-control validate" required>
           </div>
           <div class="form-group mb-4">
             <label style="color: rgb(0, 0, 0);" for="password">konfirmasi Password</label>
-            <input type="password" name="passconf" id="Form-con-password" class="form-control validate">
+            <input type="password" name="passconf" id="Form-con-password" class="form-control validate" required>
           </div>
           <div class="text-center mb-3">
           <button style="color: rgb(255, 255, 255);" type="submit" id="btnregis" class="btn btn-primary btn-lg btn-block">Sign in</button>
