@@ -1,4 +1,5 @@
 # Titanik (in progress)
-IF-42-05_SKPL_TITANIK(Sistem Pengelolaan Pertanian Lokal)FIX.pdf = SKPL terakhir
-
-TITANIK_DPPL.pdf = DPPL terakhir
+Document: 
+  IF-42-05_SKPL_TITANIK(Sistem Pengelolaan Pertanian Lokal)FIXED.pdf = Updated SKPL
+  TITANIK_DPPL.pdf = Updated DPPL
+ 
