@@ -1,21 +1,11 @@
 <?php
-class penjual { 
+class pembeli {
 
-    public function penjual($namapenjual, $id, $idUser, $status, $alamat) {
-        this.$namapenjual = namapenjual;
+    public function pembeli($id, $idUser, $status, $alamat) {
         this.$id = id;
         this.$idUser = idUser;
         this.$status = status;
         this.$alamat = alamat;
-    }
-
-    // Method setNamapenjual dan getNamapenjual berfungsi untuk mengambil dan mengisi Nama Penjual ke dalam objek.
-    public function getNamapenjual() {
-        return namapenjual;
-    }
-
-    public function setNamapenjual($namapenjual) {
-        this.$namapenjual = namapenjual;
     }
 
     // Method setId dan getId berfungsi untuk mengambil dan mengisi ID ke dalam objek.
@@ -53,6 +43,6 @@ class penjual {
     public function setAlamat($alamat) {
         this.$alamat = alamat;
     }
-    
-}
+ 
+} 
 ?>

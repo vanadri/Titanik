@@ -1,7 +1,7 @@
 <?php
 class pesanan {
 
-    public function pesanan($id, $idPenjual,$idPembeli, $idAdmin, $ongkir, $totalHarga, $statusPesanan, $createDate, $updateDate, $deleteDate) {
+    public function pesanan($id, $idPenjual,$idPembeli, $idAdmin, $ongkir, $totalHarga, $statusPesanan) {
         this.$id = id;
         this.$idPenjual = idPenjual;
         this.$idPembeli = idPembeli;
@@ -9,11 +9,9 @@ class pesanan {
         this.$ongkir = ongkir;
         this.$totalHarga = totalHarga;
         this.$statusPesanan = statusPesanan;
-        this.$createDate = createDate;
-        this.$updateDate = updateDate;
-        this.$deleteDate = deleteDate;
     }
 
+    // Method setId dan getId berfungsi untuk mengambil dan mengisi ID ke dalam objek.
     public function getId() {
         return id;
     }
@@ -22,6 +20,7 @@ class pesanan {
         this.$id = id;
     }
 
+    // Method setIdPenjual dan getIdPenjual berfungsi untuk mengambil dan mengisi ID Penjual ke dalam objek.
     public function getIdPenjual() {
         return idPenjual;
     }
@@ -30,6 +29,7 @@ class pesanan {
         this.$idPenjual = idPenjual;
     }
 
+    // Method setIdPembeli dan getIdPembeli berfungsi untuk mengambil dan mengisi ID Pembeli ke dalam objek.
     public function getIdPembeli() {
         return idPembeli;
     }
@@ -38,6 +38,7 @@ class pesanan {
         this.$idPembeli = idPembeli;
     }
 
+    // Method setIdAdmin dan getIdAdmin berfungsi untuk mengambil dan mengisi ID Admin ke dalam objek.
     public function getIdAdmin() {
         return idAdmin;
     }
@@ -46,7 +47,7 @@ class pesanan {
         this.$idAdmin = idAdmin;
     }
 
-
+    // Method setOngkir dan getOngkir berfungsi untuk mengambil dan mengisi Ongkir ke dalam objek.
     public function getOngkir() {
         return ongkir;
     }
@@ -55,6 +56,7 @@ class pesanan {
         this.$ongkir = ongkir;
     }
 
+    // Method setTotalHarga dan getTotalHarga berfungsi untuk mengambil dan mengisi Total harga ke dalam objek.
     public function getTotalHarga() {
         return totalHarga;
     }
@@ -63,6 +65,7 @@ class pesanan {
         this.$totalHarga = totalHarga;
     }
 
+    // Method setStatusPesanan dan getStatusPesanan berfungsi untuk mengambil dan mengisi Status pesanan ke dalam objek.
     public function getStatusPesanan() {
         return statusPesanan;
     }
@@ -71,29 +74,5 @@ class pesanan {
         this.$statusPesanan = statusPesanan;
     }
 
-    public function getCreateDate() {
-        return createDate;
-    }
-
-    public function setCreateDate($createDate) {
-        this.$createDate = createDate;
-    }
-
-    public function getUpdateDate() {
-        return updateDate;
-    }
-
-    public function setUpdateDate($updateDate) {
-        this.$updateDate = updateDate;
-    }
-
-    public function getDeleteDate() {
-        return deleteDate;
-    }
-
-    public function setDeleteDate($deleteDate) {
-        this.$deleteDate = deleteDate;
-    }
- 
-} 
+}
 ?>

@@ -2,30 +2,32 @@
 class M_Login extends CI_Model{
 	
 	public function check_email($email){
-		//check if username (from param) already exist in db or not, return true / false
+		// Melakukan pengecekan apabila username telah berada di dalam database atau belum, dengan return true / false
 		return $this->db->get_where('user', ['email' => $email])->num_rows() > 0;
 	}
 	
 	public function loginuser($data) {
-		//check if data (consist of username and password) exist/found in db, return true / false
+		// Melakukan pengecekan apabila data telah berada di dalam database atau belum, dengan return true / false
 		return $this->db->get_where('user', $data)->num_rows() == 1;
 	}
 	
 	public function insert_new_profle($data){
-		//insert data (consist of username, password, and profile pic filename) to table, return true if insert works and vice versa
+		// Menginput data profil baru ke dalam tabel, return true jika berhasil, false jika gagal
 		return $this->db->insert('user', $data);
 	}
 	
 	public function get_profile($email){
-		//select 1 row profile based on username (from param) and return it, if the data is not found then return false
+		// Memilih satu baris profil berdasarkan username dan menampilkannya, jika data tidak ditemukan maka return false
 		return $this->check_email($email) ? $this->db->get_where('user', ['email' => $email])->row_array() : false;
 	}
 
 	function cek_login($table,$where){		
+		// Melakukan pengecekan apabila sudah melakukan login
 		return $this->db->get_where($table,$where);
 	}	
 	
 	function regist($data){
+		// Melakukan pengecekan apabila sudah melakukan register
 		return $this->db->insert('user', $data);
 	}
 }
