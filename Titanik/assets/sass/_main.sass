@@ -1,0 +1,44 @@
+@font-face
+  font-family: "OpenSans"
+  font-weight: 400
+  src: url("fonts/OpenSans-Regular.ttf")
+
+@font-face
+  font-family: "OpenSans"
+  font-weight: 700
+  src: url("fonts/OpenSans-Bold.ttf")
+
+nav.sidebar-nav
+  ul#sidebarnav
+    li
+      a
+        padding: 10px 5px 10px 15px
+        font-size: 13px
+
+#main-wrapper
+  header.topbar
+    background-image: linear-gradient(to left, $pus-green, darken($pus-green, 10%))
+
+div.input-group
+  input#pencarian
+    border-right-width: 0px
+    + div.input-group-append
+      span.input-group-text
+        background-color: transparent
+        border-left-width: 0px
+        
+table.table-striped
+  td, th
+    padding: 8px 15px
+  thead, tfoot
+    tr
+      th
+        font-weight: 700
+        
+button
+  &:disabled
+    background-color: #aaa !important
+    border-color: #aaa !important
+    
+footer.footer
+  font-size: 13px
