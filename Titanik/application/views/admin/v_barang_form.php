@@ -63,7 +63,7 @@
                               <input value="<?= (!empty($dtc->barang_berat))? $dtc->barang_berat: ""; ?>"  type="text" class="form-control" name="barang_berat">
                               </div>
                               <div class="col-md-5">
-                                 <label>Gram</label>
+                                 <label>Kilogram</label>
                               </div>
                           </div>
                         </div>
